@@ -1,6 +1,6 @@
 # PARKING LOT
 
-![parkinglot]
+![parkinglot](https://raw.githubusercontent.com/NIKHILSHADOW/parkinglot/v1/static/parkinglot.iuml)
 
 ```plantuml
 
