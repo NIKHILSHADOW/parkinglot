@@ -1,5 +1,7 @@
 # PARKING LOT
 
+![parkinglot]
+
 ```plantuml
 
 @startuml

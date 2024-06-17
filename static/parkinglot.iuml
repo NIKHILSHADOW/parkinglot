@@ -1,0 +1,48 @@
+
+@startuml
+
+    actor "ticket collector" as TC
+    actor "ticket issuer" as TI
+    actor "admin" as admin
+
+    Rectangle ParkingLot {
+        left to right direction
+
+         usecase (check Spot Available of Type) as checkSpotAvailable
+         usecase (generate Ticket) as generateTicket
+         usecase (change spot Status) as updateSpot
+
+         usecase (generate bill) as generateBill
+
+         usecase (collect amount) as collectAmount
+
+         usecase (check payment status) as checkPaymentStatus
+
+    }
+
+    admin -- ParkingLot
+
+    TI -- checkSpotAvailable
+    TI -- generateTicket
+    TI -- updateSpot
+
+
+    TC -- generateBill
+    TC -- collectAmount
+
+
+    TC -- checkPaymentStatus
+    TC -- updateSpot
+
+    generateTicket -> updateSpot
+    checkSpotAvailable -> generateTicket
+
+
+
+    collectAmount <- generateBill
+
+    checkPaymentStatus <- collectAmount
+
+    updateSpot <- checkPaymentStatus
+
+@enduml
