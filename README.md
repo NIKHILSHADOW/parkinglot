@@ -1,6 +1,6 @@
 # PARKING LOT
 
-![parkinglot](https://raw.githubusercontent.com/NIKHILSHADOW/parkinglot/v1/static/parkinglot.iuml)
+![parkinglot]([https://raw.githubusercontent.com/NIKHILSHADOW/parkinglot/v1/static/parkinglot.iuml](https://raw.githubusercontent.com/williehao/nginx-certbot/main/nginx-certbot.iuml))
 
 ```plantuml
 
